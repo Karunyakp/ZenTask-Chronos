@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenTask Chronos - Ultimate Focus App</title>
+    <!-- This line links your icon.ico if uploaded to the same folder -->
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --accent: #818cf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 2rem 0;
+            text-align: center;
+            background: linear-gradient(to bottom, #1e293b, #0f172a);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            padding: 3rem 1rem;
+            text-align: center;
+            flex: 1;
+        }
+
+        .hero-text {
+            font-size: 1.5rem;
+            color: var(--text-dim);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+        }
+
+        .download-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            text-align: left;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .feature-desc {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-top: auto;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <!-- Uncomment the line below if you uploaded icon.ico to your repo -->
+            <!-- <img src="icon.ico" alt="Logo" width="48" height="48"> -->
+            <h1 class="logo-text">ZenTask Chronos</h1>
+        </div>
+        <p style="color: #94a3b8; margin-top: 0.5rem;">v1.0 • Windows Edition</p>
+    </header>
+
+    <div class="container">
+        <p class="hero-text">
+            Master your time with the ultimate productivity dashboard. 
+            Combine advanced focus timers, smart task management, and gamified progress tracking in one beautiful app.
+        </p>
+
+        <!-- 
+             IMPORTANT: Replace YOUR_USERNAME below with your actual GitHub username!
+             Example: https://github.com/johnDoe/ZenTask-Chronos/...
+        -->
+        <a href="https://github.com/Karunyakp/ZenTask-Chronos/releases/latest/download/ZenTask.Chronos.exe" class="download-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download for Windows
+        </a>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">⏱️</span>
+                <h3 class="feature-title">Focus Timer</h3>
+                <p class="feature-desc">Built-in Pomodoro timer with customizable intervals for deep work, short breaks, and long breaks.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⭐</span>
+                <h3 class="feature-title">Gamification</h3>
+                <p class="feature-desc">Earn XP for every minute you focus and every task you complete. Level up your productivity!</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">✅</span>
+                <h3 class="feature-title">Task Manager</h3>
+                <p class="feature-desc">Organize tasks with priorities and due dates. Filter by status to keep your dashboard clean.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📊</span>
+                <h3 class="feature-title">Statistics</h3>
+                <p class="feature-desc">Track your progress with detailed stats on completed sessions and total focus time.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🎨</span>
+                <h3 class="feature-title">Modern UI</h3>
+                <p class="feature-desc">A sleek, distraction-free interface with full support for both Dark and Light modes.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔒</span>
+                <h3 class="feature-title">100% Offline</h3>
+                <p class="feature-desc">Your data stays on your device. No internet connection required to stay productive.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 ZenTask Chronos. Open Source Project.</p>
+        <p>View source code on <a href="https://github.com/Karunyakp/ZenTask-Chronos">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
